@@ -1,14 +1,12 @@
-export const version = import.meta.env.VITE_VERSION || "unset_version";
-export const sha = import.meta.env.GIT_SHA || "unset_sha";
-export const basename = import.meta.env.PUBLIC_URL;
-
 export const title = "Vite Boilerplate";
 
 const { env } = import.meta;
 
-const ghUrl = "https://github.com/nexys-system/boilerplate_vite";
+export const version: string = env.VITE_VERSION || "unset_version";
+export const sha: string = env.GIT_SHA || "unset_sha";
+export const basename = env.PUBLIC_URL;
 
-console.log({ env });
+const ghUrl = "https://github.com/nexys-system/boilerplate_vite";
 
 export const github = {
   sha: `${ghUrl}/commit/${sha}`,
