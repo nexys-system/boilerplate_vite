@@ -1,0 +1,27 @@
+name: Deploy
+
+on:
+  [push]
+  #push:
+  #  tags:
+  #    - v*
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: yarn
+      - run: yarn test
+      - name: Build page
+        run: GIT_SHA=$GITHUB_SHA VERSION=${GITHUB_REF##*/} PUBLIC_URL=/boilerplate_vite yarn build
+      - name: add 404
+        run: cp build/index.html build/404.html
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./dist
