@@ -1,3 +1,17 @@
-const App = () => <p>Hello World!</p>;
+import { Route, Routes } from "react-router-dom";
+import Home from "./home";
 
-export default App;
+const NotFound = () => (
+  <p>
+    <i>Page Not Found</i>
+  </p>
+);
+
+export default () => {
+  return (
+    <Routes>
+      <Route path={"/"} element={<Home />} />
+      <Route path={"/:any"} element={<NotFound />} />
+    </Routes>
+  );
+};
