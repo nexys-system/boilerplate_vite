@@ -6,7 +6,7 @@ export const title = "Vite Boilerplate";
 
 const { env } = import.meta;
 
-const ghUrl = "https://github.com/nexys-system/vite_boilerplate";
+const ghUrl = "https://github.com/nexys-system/boilerplate_vite";
 
 console.log({ env });
 
