@@ -5,3 +5,16 @@
 ## Get started
 
 ![get started](./recording.gif)
+
+
+## Included resources
+
+### Bootstrap
+
+https://getbootstrap.com/docs/5.0/content
+
+### Font-awesome
+
+[version 6.1.1](https://cdnjs.com/libraries/font-awesome)
+
+Browse available icons: https://fontawesome.com/search
