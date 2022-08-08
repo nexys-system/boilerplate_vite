@@ -1,7 +1,7 @@
 {
   "name": "@nexys-system/boilerplate_vite",
   "private": true,
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
