@@ -39,3 +39,8 @@ https://getbootstrap.com/docs/5.0/content
 [version 6.1.1](https://cdnjs.com/libraries/font-awesome)
 
 Browse available icons: https://fontawesome.com/search
+
+
+## More
+
+see [headless](https://github.com/nexys-system/react-headless) to be able to create Admin UI easily
