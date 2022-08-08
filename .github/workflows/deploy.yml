@@ -16,7 +16,7 @@ jobs:
       - run: yarn
       - run: yarn test
       - name: Build page
-        run: VITE_GIT_SHA=$GITHUB_SHA VITE_VERSION=${GITHUB_REF##*/} yarn build
+        run: VITE_GIT_SHA=$GITHUB_SHA VITE_VERSION=${GITHUB_REF##*/} yarn build --config config-ghpages.js
       - name: add 404
         run: cp dist/index.html dist/404.html
       - name: Deploy to gh-pages
