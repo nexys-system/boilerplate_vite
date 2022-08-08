@@ -1,3 +1,4 @@
+// specific config for gh pages since the path prefix is needed
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 
