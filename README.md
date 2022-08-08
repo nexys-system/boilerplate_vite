@@ -1,6 +1,7 @@
 # Boilerplate for Vite Project
 
 [![Test](https://github.com/nexys-system/boilerplate_vite/actions/workflows/test.yml/badge.svg)](https://github.com/nexys-system/boilerplate_vite/actions/workflows/test.yml)
+[![Deploy](https://github.com/nexys-system/boilerplate_vite/actions/workflows/deploy.yml/badge.svg)](https://github.com/nexys-system/boilerplate_vite/actions/workflows/deploy.yml)
 [![Docker](https://github.com/nexys-system/boilerplate_vite/actions/workflows/docker.yml/badge.svg)](https://github.com/nexys-system/boilerplate_vite/actions/workflows/docker.yml)
 
 ## Get started
