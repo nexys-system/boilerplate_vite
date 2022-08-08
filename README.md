@@ -4,6 +4,8 @@
 [![Deploy](https://github.com/nexys-system/boilerplate_vite/actions/workflows/deploy.yml/badge.svg)](https://github.com/nexys-system/boilerplate_vite/actions/workflows/deploy.yml)
 [![Docker](https://github.com/nexys-system/boilerplate_vite/actions/workflows/docker.yml/badge.svg)](https://github.com/nexys-system/boilerplate_vite/actions/workflows/docker.yml)
 
+This template repo allows you to create a JS app with [Vite](https://vitejs.dev/) in less than a minute with CI and CD - leveraging [Github actions](https://github.com/features/actions).
+
 ## Get started
 
 ![get started](./recording.gif)
