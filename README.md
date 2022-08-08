@@ -10,7 +10,13 @@ This template repo allows you to create a JS app with [Vite](https://vitejs.dev/
 
 ![get started](./recording.gif)
 
-### Deploy
+Just click on "use this template" to create a github repo of your own.
+Locally:
+* clone
+* `yarn` (to install dependencies)
+* `yarn start` to start a dev server
+
+### Deployment
 
 Deployment is triggered for every new tag/release. [See instructions on how to create a new release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository).
 
