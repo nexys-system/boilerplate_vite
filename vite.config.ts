@@ -4,6 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 // conditional config: https://vitejs.dev/config/#conditional-config
 export default defineConfig(({ command, mode, ssrBuild }) => {
+  console.log({ command, mode, ssrBuild });
   const baseConfig =  {
     plugins: [react()],
     test: {
