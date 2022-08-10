@@ -1,16 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./home";
 
-const NotFound = () => (
-  <p>
-    <i>Page Not Found</i>
-  </p>
-);
+import Home from "./home";
+import NotFound from './not-found';
+
+import links from "./links";
 
 export default () => {
   return (
     <Routes>
-      <Route path={"/"} element={<Home />} />
+      <Route path={links.home.link} element={<Home />} />
       <Route path={"/:any"} element={<NotFound />} />
     </Routes>
   );
