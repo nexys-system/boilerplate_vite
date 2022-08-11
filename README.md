@@ -28,6 +28,12 @@ The project is configured to be deployed to github pages automatically. Make sur
 
 A Docker container is generated for every release. Runs on port `3000`. [See the list of generated Docker containers](https://github.com/nexys-system/boilerplate_vite/pkgs/container/boilerplate_vite%2Fboilerplate_vite)
 
+### Best Practices
+
+When deployed via the container the website gets a perfect score with lighthouse
+
+![Lightouse screenshot made on Aug 11 with a docker deployment, v0.0.21](./lightouse-screenshot.png)
+
 ## Included resources
 
 ### Bootstrap
