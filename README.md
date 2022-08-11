@@ -30,7 +30,7 @@ A Docker container is generated for every release. Runs on port `3000`. [See the
 
 ### Best Practices
 
-When deployed via the container the website gets a perfect score with lighthouse
+When deployed via the container the website gets a perfect score with [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
 
 ![Lightouse screenshot made on Aug 11 with a docker deployment, v0.0.21](./lightouse-screenshot.png)
 
