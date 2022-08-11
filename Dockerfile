@@ -1,4 +1,5 @@
-# this generates a minimalistic docker image. Note that 404 is not supported
+# this generates a minimalistic docker image
+# see https://github.com/lipanski/docker-static-website/#usage
 FROM lipanski/docker-static-website:2.1.0
 
 COPY httpd.conf .
