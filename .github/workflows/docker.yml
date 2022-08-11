@@ -1,10 +1,9 @@
 name: Docker
 
 on:
-  [push]
-  #push:
-  #  tags:
-  #    - v*
+  push:
+    tags:
+      - v*
 
 jobs:
   test:
