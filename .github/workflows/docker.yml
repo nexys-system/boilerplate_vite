@@ -1,9 +1,10 @@
 name: Docker
 
 on:
-  push:
-    tags:
-      - v*
+  [push]
+  #push:
+  #  tags:
+  #    - v*
 
 jobs:
   test:
@@ -17,6 +18,8 @@ jobs:
       - run: yarn test
       - name: Build page
         run: VITE_VERSION=${GITHUB_REF##*/} VITE_GIT_SHA=$GITHUB_SHA yarn build
+      - name: Gzip
+        run: gzip -r -k dist
       - name: Set env var
         run: echo "DOCKERHUB_URL=$(echo ghcr.io/${GITHUB_REPOSITORY,,}/${{ github.event.repository.name }})" >> $GITHUB_ENV
       - name: see env
