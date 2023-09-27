@@ -16,6 +16,10 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
   if (mode === 'ghpages') {
     return {...baseConfig, base: "/boilerplate_vite/" };
   }
+
+  if (mode === 'deploy') {
+    return {...baseConfig, base: "/demo/" };
+  }
   
   return baseConfig;
 });
