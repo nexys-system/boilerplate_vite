@@ -1,9 +1,7 @@
 name: Deploy Nexys
 
 on:
-  push:
-    tags:
-      - v*
+  [push]
 
 jobs:
   test:
