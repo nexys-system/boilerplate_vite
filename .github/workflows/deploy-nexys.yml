@@ -1,9 +1,6 @@
 name: Deploy Nexys
 
-on:
-  push:
-    tags:
-      - v*
+on: [push]
 
 jobs:
   test:
@@ -14,4 +11,3 @@ jobs:
           build-command: VITE_GIT_SHA=$GITHUB_SHA VITE_VERSION=${GITHUB_REF##*/} yarn build --mode deploy
           deploy-project-name: demo
           deploy-token: ${{ secrets.DEPLOY_TOKEN }}
-  
