@@ -1,0 +1,17 @@
+name: Deploy Nexys
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: nexys-system/gh-actions-spa-test@v1.1.3
+        with:
+          build-command: VITE_GIT_SHA=$GITHUB_SHA VITE_VERSION=${GITHUB_REF##*/} yarn build --mode deploy
+          deploy-project-name: demo
+          deploy-token: ${{ secrets.DEPLOY_TOKEN }}
+  
