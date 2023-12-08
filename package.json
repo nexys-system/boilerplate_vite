@@ -1,6 +1,7 @@
 {
   "name": "@nexys-systems/boilerplate_vite",
   "private": true,
+  "type":"module",
   "version": "0.0.13",
   "scripts": {
     "start": "vite",
