@@ -1,12 +1,23 @@
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 
+// add proxy, optional
+const proxy: { [l: string]: ProxyOptions } = {
+  "^/api/.*": {
+    target: "http://localhost:3002",
+    changeOrigin: true,
+    secure: false,
+    rewrite: (path: string) => path.replace(/^\/api\/, ""),
+  },
+};
+
 // this the default/base configuration
 const baseConfig =  {
   plugins: [react()],
   test: {
     // ...
-  }
+  },
+  server: { proxy }
 };
 
 // https://vitejs.dev/config/
