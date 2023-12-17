@@ -1,3 +1,4 @@
+import { ProxyOptions } from "vite";
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 
@@ -7,7 +8,7 @@ const proxy: { [l: string]: ProxyOptions } = {
     target: "http://localhost:3002",
     changeOrigin: true,
     secure: false,
-    rewrite: (path: string) => path.replace(/^\/api\/, ""),
+    rewrite: (path: string) => path.replace(/^\/api/, ""),
   },
 };
 
