@@ -23,7 +23,7 @@ const baseConfig =  {
 
 // https://vitejs.dev/config/
 // conditional config: https://vitejs.dev/config/#conditional-config
-export default defineConfig(({ command, mode, ssrBuild }) => {  
+export default defineConfig(({ command, mode }) => {  
   // if  `mode===ghpages`: we add the path prefix to match the path prefix of gh pages
   if (mode === 'ghpages') {
     return {...baseConfig, base: "/boilerplate_vite/" };
