@@ -1,7 +1,7 @@
 import Footer from "./footer";
 import Header from "./header";
 
-function Layout({ children }: { children: any }) {
+function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="d-flex flex-column min-vh-100">
       <Header />
