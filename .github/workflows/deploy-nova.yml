@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: nexys-system/gh-actions-spa-test@v1.1.10
+      - uses: nexys-system/gh-actions-spa-test@v1.2.0
         with:
           build-command: VITE_GIT_SHA=$GITHUB_SHA VITE_VERSION=${GITHUB_REF##*/} yarn build --mode deploy
           deploy-project-name: demo
